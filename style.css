@@ -2,10 +2,12 @@
 
 :root{
   --primary-color:#4caf50;
-  --primary-color-transparent: rgba(76, 175, 80, 0.6);
+  --primary-color-transparent: rgba(6, 74, 38, 0.5);
   --secondary-color:#2E7D32;
   --third-color: #ffdf00;
   --nav-color:#5D4037;
+  --white-color:#ffffff;
+
 }
 
 * {
@@ -21,7 +23,8 @@ body {
 .top-header {
     display: flex;
     justify-content: space-between;
-    padding: 15px;
+    align-items: center;
+    padding: 10px;
     color: var(--third-color);
     background-color: var(--primary-color-transparent);
     border-bottom: 2px solid white;
@@ -37,7 +40,7 @@ body {
 }
 
 .social-media i {
-    font-size: 25px; 
+    font-size: 20px; 
 }
 
 .social-media i:hover {
@@ -66,6 +69,8 @@ body {
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
+    position: sticky;
+    top: 0;
 }
 
 .navigation nav {
@@ -77,19 +82,22 @@ body {
     text-decoration: none;
     font-size: 20px;
     font-family: Montserrat, sans-serif;
-    font-weight: 600;
-    color: var(--nav-color);
+    font-weight: 400;
+    color: var(--white-color);
 }
 
 .navigation a:hover{
   color: var(--third-color);
 }
 
-.container > img {
-  width: 100%;
+.carousel-inner,
+.carousel-item,
+.carousel-item img {
+  width: 100vw;
   height: 100vh;
   object-fit: cover;
 }
+
 
 .header-navigation {
     position: absolute;
