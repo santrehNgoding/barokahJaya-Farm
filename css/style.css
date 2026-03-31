@@ -41,12 +41,40 @@ body {
   color: var(--warna-kedua);
 }
 
+.sosmed-container {
+  position: relative;
+  display: inline-block;
+}
+
+.sosmed {
+  position: absolute;
+  top: 120%; /* turun sedikit dari icon */
+  /* left: 50%;
+  transform: translateX(-50%); */
+
+  left: 0;
+  transform: none;
+
+  /* background: white; */
+  padding: 10px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
 .sosmed a {
   padding-left: 10px;
 }
 
-.sosmed-container {
-  position: relative;
+.sosmed.active {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .sosmed-toggle {
@@ -783,7 +811,6 @@ footer h3 {
   .sosmed-toggle {
     display: flex;
     font-size: 20px;
-    background: var(--warna-utama);
     color: white;
     padding: 10px;
     border-radius: 50%;
@@ -792,11 +819,6 @@ footer h3 {
 
   .sosmed a {
     padding-left: 0px;
-  }
-
-  .top-navigation {
-    flex-direction: column;
-    justify-content: space-between;
   }
 
   .home main {
