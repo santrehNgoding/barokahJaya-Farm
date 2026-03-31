@@ -723,7 +723,7 @@ footer h3 {
 
 /* ---------Media Query----------------- */
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .navigation {
     background: rgba(255, 255, 255, 0.95);
   }
