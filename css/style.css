@@ -124,6 +124,14 @@ nav a:hover {
   color: var(--warna-kedua);
 }
 
+.bottom-navigation.active {
+  background: rgba(46, 125, 50, 0.95);
+}
+
+.bottom-navigation.active a {
+  color: var(--warna-utama);
+}
+
 /* ---------- Burger Menu ---------- */
 
 .burger {

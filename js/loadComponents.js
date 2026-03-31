@@ -33,6 +33,7 @@ loadComponent("navbar", "components/navbar.html", function () {
   burger.addEventListener("click", function () {
     burger.classList.toggle("active");
     menu.classList.toggle("active");
+    nav.classList.toggle("active");
   });
 
   // =========================
