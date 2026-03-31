@@ -21,7 +21,7 @@ body {
 .top-navigation {
   display: flex;
   justify-content: space-between;
-  padding: 15px;
+  padding: 15px 10px;
   background-color: var(--warna-utama);
   color: var(--warna-netral);
   border-bottom: 2px solid var(--warna-netral);
@@ -48,17 +48,11 @@ body {
 
 .sosmed {
   position: absolute;
-  top: 120%; /* turun sedikit dari icon */
-  /* left: 50%;
-  transform: translateX(-50%); */
-
+  top: 120%;
   left: 0;
   transform: none;
-
-  /* background: white; */
   padding: 10px;
   border-radius: 10px;
-
   display: flex;
   flex-direction: column;
   gap: 10px;
