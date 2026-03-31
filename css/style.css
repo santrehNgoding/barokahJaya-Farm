@@ -841,7 +841,7 @@ footer h3 {
   /* ---------- Gallery--------- */
 
   .gallery {
-    grid-template-columns: 1fr 1fr; /* 2 kolom */
+    grid-template-columns: 1fr; /* 1 kolom */
   }
 
   .item {
@@ -850,7 +850,7 @@ footer h3 {
   }
 
   .item img {
-    height: 150px;
+    height: 250px;
   }
 
   .item:active img {
