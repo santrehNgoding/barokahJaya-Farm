@@ -729,6 +729,20 @@ footer h3 {
     background: rgba(255, 255, 255, 0.95);
   }
 
+  .top-navigation {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .top-navigation p {
+    font-size: 12px;
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
   .burger {
     display: flex;
   }
@@ -740,12 +754,9 @@ footer h3 {
     right: 0;
     background: white;
     width: 200px;
-
     flex-direction: column;
     align-items: flex-start;
-
     padding: 20px;
-
     transform: translateX(100%);
     transition: 0.3s;
     z-index: 9999;
@@ -772,15 +783,11 @@ footer h3 {
     transform: rotate(-45deg) translate(5px, -5px);
   }
 
-  .top-navigation {
-    padding: 10px;
-  }
-
   /* ------ sosmed ---------- */
 
   .sosmed-toggle {
     display: flex;
-    font-size: 20px;
+    font-size: 16px;
     color: white;
     padding: 10px;
     border-radius: 50%;
@@ -791,14 +798,11 @@ footer h3 {
     position: absolute;
     top: 50px;
     right: 0;
-
     background: white;
-    padding: 10px;
+    padding: 5px;
     border-radius: 10px;
-
     flex-direction: column;
     gap: 10px;
-
     opacity: 0;
     pointer-events: none;
     transform: translateY(-10px);
@@ -808,7 +812,7 @@ footer h3 {
   }
 
   .sosmed a {
-    font-size: 20px;
+    font-size: 16px;
     color: var(--warna-kedua);
   }
 
