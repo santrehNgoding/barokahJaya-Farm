@@ -730,17 +730,17 @@ footer h3 {
   }
 
   .top-navigation {
-    flex-direction: column;
+    flex-direction: row; /* tetap 1 baris */
     align-items: center;
-    text-align: center;
+    justify-content: space-between;
   }
 
   .top-navigation p {
     font-size: 12px;
-    flex: 1;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    white-space: nowrap; /* jangan turun baris */
+    overflow: hidden; /* sembunyikan kelebihan */
+    text-overflow: ellipsis; /* jadi ... */
+    max-width: 75%;
   }
 
   .burger {
@@ -820,6 +820,10 @@ footer h3 {
     opacity: 1;
     pointer-events: auto;
     transform: translateY(0);
+  }
+
+  .sosmed-container {
+    flex-shrink: 0; /* icon tidak ikut mengecil */
   }
 
   .home main {
