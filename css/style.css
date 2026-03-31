@@ -18,6 +18,14 @@ body {
 
 /* ---------Top Navigation-------------- */
 
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
 .top-navigation {
   display: flex;
   justify-content: space-between;
@@ -101,14 +109,6 @@ nav a {
 
 nav a:hover {
   color: #90ee90;
-}
-
-.navigation {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 9999;
 }
 
 .bottom-navigation.scrolled {
@@ -838,7 +838,7 @@ footer h3 {
   /* -------- Home Main-------- */
 
   .home main {
-    margin-top: 10px;
+    margin-top: 0;
   }
 
   .home main h2 {
@@ -962,5 +962,13 @@ footer h3 {
   .right-footer {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     padding-top: 15px;
+  }
+
+  .menu a {
+    font-size: 16px;
+  }
+
+  body {
+    padding-top: 50px;
   }
 }
