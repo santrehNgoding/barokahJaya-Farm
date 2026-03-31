@@ -1,137 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>barokahJayaFarm</title>
+    <title>Barokah Jaya Farm</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
-    <div class="bagian-atas">
-      <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="image.jpg" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>
-                Some representative placeholder content for the first slide.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="image2.jpg" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="image6.jpg" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>
-                Some representative placeholder content for the third slide.
-              </p>
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <header class="header-navigation">
-        <div class="top-header">
-          <a href="https://t.me/barokahJayaFarm_Bot" target="_blank">
-            <i class="fa-brands fa-telegram"></i>
-            Chat dengan Bot Kami
-          </a>
+  <body class="home">
+    <div id="navbar" class="navigation"></div>
 
-          <div class="social-media">
-            <a href="https://www.facebook.com/yan.to1987" target="_blank"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
-            <a href="https://www.instagram.com/santreh_ngoding"
-              ><i class="fa-brands fa-square-instagram" target="_blank"></i
-            ></a>
-            <a href="https://www.tiktok.com/berkahjaya.farm87"
-              ><i class="fa-brands fa-tiktok" target="_blank"></i
-            ></a>
-            <a href="https://t.me/yanto87" target="_blank"
-              ><i class="fa-brands fa-telegram"></i
-            ></a>
-            <a href="https://wa.me/6285330207559" target="_blank">
-              <i class="fa-brands fa-whatsapp"></i>
-            </a>
-          </div>
-        </div>
-        <div class="navigation">
-          <img src="logo.png" alt="" />
-          <nav class="navigasi">
-            <a href="">Beranda</a>
-            <a href="">Tentang Kami</a>
-            <a href="">Produk</a>
-            <a href="">Galeri</a>
-            <a href="">Artikel</a>
-            <a href="">Testimoni</a>
-          </nav>
-        </div>
-      </header>
-    </div>
-    <!-- <main>
-      <section class="description">
-        <div class="line-farm">
-          <div class="line"></div>
-          <h2>Barokah Jaya Farm</h2>
-          <div class="line"></div>
-        </div>
+    <div id="header" class="hero-video"></div>
+
+    <main>
+      <section class="tentang-peternakan">
+        <h2>Barokah Jaya Farm</h2>
         <p>
           Barokah Jaya Farm berdiri pada tanggal 9 Mei 2025, lahir dari semangat
           kemandirian ekonomi, keinginan untuk memperoleh passive income, serta
@@ -145,7 +37,7 @@
           Probolinggo.
         </p>
         <p>
-          Berawal dari 7 ekor domba—6 betina dan 1 pejantan—saya menanamkan
+          Berawal dari 7 ekor domba: 6 betina dan 1 pejantan—saya menanamkan
           harapan besar agar peternakan ini bisa berkembang hingga memiliki
           setidaknya 200 indukan. Tidak hanya asal memelihara, saya
           memperhatikan betul kualitas indukan yang dipilih. Saya sengaja
@@ -163,146 +55,175 @@
           jadwal pemberian yang konsisten, semuanya dilakukan demi menjaga
           kualitas domba agar selalu prima.
         </p>
-        <a href=""><p class="next">Baca Selengkapnya...!</p></a>
+        <p><a href="tentang.html">Baca selengkapnya...</a></p>
       </section>
-      <section class="grid-image">
-        <div class="item item1">
-          <img src="image1.jpg" alt="" />
-        </div>
-        <div class="item item2">
-          <img src="image2.jpg" alt="" />
-        </div>
-        <div class="item item3">
-          <img src="image3.jpg" alt="" />
-        </div>
-        <div class="item item4">
-          <img src="image4.jpg" alt="" />
-        </div>
-        <div class="item item5">
-          <img src="image5.jpg" alt="" />
-        </div>
-        <div class="item item6">
-          <img src="image6.jpg" alt="" />
-        </div>
-        <div class="item item7">
-          <img src="image7.jpg" alt="" />
-        </div>
-        <div class="item item8">
-          <img src="image8.jpg" alt="" />
-        </div>
-      </section>
-      <section class="testimoni">
-        <div class="line-farm">
-          <div class="line"></div>
-          <h2>Testimoni Customer</h2>
-          <div class="line"></div>
-        </div>
-        <div class="card-image">
-          <div class="image image-left">
-            <div>
-              <p><strong>Cut Syifa</strong></p>
-              <p><span>Founder Warung Raja Sate</span></p>
-              <blockquote>
-                <q>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
-                  officia? Ab eos asperiores eum incidunt autem tempora ut animi
-                  praesentium nostrum ea quod, aspernatur, debitis est maiores
-                  error rerum labore eaque similique cum nam officiis dolore.
-                </q>
-              </blockquote>
-            </div>
-            <img src="syifa.jpg" alt="" />
-          </div>
 
-          <div class="image">
-            <div>
-              <p><strong>Cut Syifa</strong></p>
-              <p><span>Founder Warung Raja Sate</span></p>
-              <blockquote>
-                <q>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
-                  officia? Ab eos asperiores eum incidunt autem tempora ut animi
-                  praesentium nostrum ea quod, aspernatur, debitis est maiores
-                  error rerum labore eaque similique cum nam officiis dolore.
-                </q>
-              </blockquote>
+      <section class="gallery">
+        <div class="item"><img src="images/image1.jpg" alt="" /></div>
+        <div class="item"><img src="images/image2.jpg" alt="" /></div>
+        <div class="item"><img src="images/image3.jpg" alt="" /></div>
+        <div class="item"><img src="images/image4.jpg" alt="" /></div>
+        <div class="item"><img src="images/image5.jpg" alt="" /></div>
+        <div class="item"><img src="images/image6.jpg" alt="" /></div>
+        <div class="item"><img src="images/image7.jpg" alt="" /></div>
+        <div class="item"><img src="images/image8.jpg" alt="" /></div>
+      </section>
+
+      <section id="testimoni" class="testimony">
+        <h2>Testimoni Customer</h2>
+        <div class="cards">
+          <div class="card">
+            <div class="customer-info">
+              <img src="images/syifa.jpg" alt="" />
+
+              <div class="name-customer">
+                <p class="customer-name">Syifa Hadju</p>
+                <p class="customer-title">CEO Raja Sate</p>
+              </div>
             </div>
-            <img src="syifa.jpg" alt="" />
+
+            <blockquote>
+              Kambing yang dijual sangat bagus, sehingga kualitas dagingnya
+              mantap, segar dan tidak keras. jika anda ingin berbisnis dikuliner
+              sate kambing maka saya sarankan ke peternakan Barokah Jaya Farm.
+            </blockquote>
           </div>
-          <div class="image image-right">
-            <div>
-              <p><strong>Cut Syifa</strong></p>
-              <p><span>Founder Warung Raja Sate</span></p>
-              <blockquote>
-                <q>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
-                  officia? Ab eos asperiores eum incidunt autem tempora ut animi
-                  praesentium nostrum ea quod, aspernatur, debitis est maiores
-                  error rerum labore eaque similique cum nam officiis dolore.
-                </q>
-              </blockquote>
+          <div class="card">
+            <div class="customer-info">
+              <img src="images/syifa.jpg" alt="" />
+
+              <div class="name-customer">
+                <p class="customer-name">Syifa Hadju</p>
+                <p class="customer-title">CEO Raja Sate</p>
+              </div>
             </div>
-            <img src="syifa.jpg" alt="" />
+
+            <blockquote>
+              Kambing yang dijual sangat bagus, sehingga kualitas dagingnya
+              mantap, segar dan tidak keras. jika anda ingin berbisnis dikuliner
+              sate kambing maka saya sarankan ke peternakan Barokah Jaya Farm.
+            </blockquote>
+          </div>
+          <div class="card">
+            <div class="customer-info">
+              <img src="images/syifa.jpg" alt="" />
+
+              <div class="name-customer">
+                <p class="customer-name">Syifa Hadju</p>
+                <p class="customer-title">CEO Raja Sate</p>
+              </div>
+            </div>
+
+            <blockquote>
+              Kambing yang dijual sangat bagus, sehingga kualitas dagingnya
+              mantap, segar dan tidak keras. jika anda ingin berbisnis dikuliner
+              sate kambing maka saya sarankan ke peternakan Barokah Jaya Farm.
+            </blockquote>
+          </div>
+          <div class="card">
+            <div class="customer-info">
+              <img src="images/syifa.jpg" alt="" />
+
+              <div class="name-customer">
+                <p class="customer-name">Syifa Hadju</p>
+                <p class="customer-title">CEO Raja Sate</p>
+              </div>
+            </div>
+
+            <blockquote>
+              Kambing yang dijual sangat bagus, sehingga kualitas dagingnya
+              mantap, segar dan tidak keras. jika anda ingin berbisnis dikuliner
+              sate kambing maka saya sarankan ke peternakan Barokah Jaya Farm.
+            </blockquote>
+          </div>
+          <div class="card">
+            <div class="customer-info">
+              <img src="images/syifa.jpg" alt="" />
+
+              <div class="name-customer">
+                <p class="customer-name">Syifa Hadju</p>
+                <p class="customer-title">CEO Raja Sate</p>
+              </div>
+            </div>
+
+            <blockquote>
+              Kambing yang dijual sangat bagus, sehingga kualitas dagingnya
+              mantap, segar dan tidak keras. jika anda ingin berbisnis dikuliner
+              sate kambing maka saya sarankan ke peternakan Barokah Jaya Farm.
+            </blockquote>
           </div>
         </div>
       </section>
-    </main> -->
-    <footer>
-      <div class="catatan-kaki">
-        <div class="frame">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31629.109969496752!2d113.49101290173748!3d-7.721852888261722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd703767c67344b%3A0xd586ed1c023aa39a!2sSumberanyar%2C%20Paiton%2C%20Probolinggo%20Regency%2C%20East%20Java!5e0!3m2!1sen!2sid!4v1750297183976!5m2!1sen!2sid"
-            width="400"
-            height="400"
-            style="border: 1"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-        <div class="footer-tengah">
-          <div class="operasional">
-            <h4>Jam Operasional Berkunjung</h4>
-            <p>Senin - Sabtu dari Jam 08:00 - 16:00 Wib</p>
-          </div>
-          <div class="contact">
-            <h4>Informasi Kontak:</h4>
-            <p>
-              Alamat Lengkap: Dusun Pesisir, Desa Sumberanyar, RT 31, RW 09,
-              Kecamatan Paiton, Kabupaten Probolinggo
-            </p>
-            <p>Nomor Telpon: 085330207559</p>
-            <p>Email: barokahJayaFarm@gmail.com</p>
-          </div>
-        </div>
-        <div class="menu-cepat">
-          <h4>Akses Menu</h4>
-          <nav>
-            <a href="">Beranda</a>
-            <a href="">Tentang Kami</a>
-            <a href="">Produk</a>
-            <a href="">Galeri</a>
-            <a href="">Artikel</a>
-            <a href="">Testimoni</a>
-          </nav>
-          <h4>Pemesanan Online</h4>
-        </div>
-      </div>
-      <p class="copyright">&copy; 2025 - santrehNgoding</p>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
-      integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/48513278db.js"
-      crossorigin="anonymous"
-    ></script>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="js/loadComponents.js"></script>
+
+    <script>
+      const cardsContainer = document.querySelector(".cards");
+      let isDown = false;
+      let startX;
+      let scrollLeft;
+
+      cardsContainer.addEventListener("mousedown", (e) => {
+        isDown = true;
+        cardsContainer.classList.add("active");
+        startX = e.pageX - cardsContainer.offsetLeft;
+        scrollLeft = cardsContainer.scrollLeft;
+        cardsContainer.style.cursor = "grabbing";
+        cardsContainer.style.userSelect = "none"; // Mencegah teks ter-select saat drag
+      });
+
+      cardsContainer.addEventListener("mouseleave", () => {
+        isDown = false;
+        cardsContainer.classList.remove("active");
+        cardsContainer.style.cursor = "grab";
+        cardsContainer.style.userSelect = "auto";
+      });
+
+      cardsContainer.addEventListener("mouseup", () => {
+        isDown = false;
+        cardsContainer.classList.remove("active");
+        cardsContainer.style.cursor = "grab";
+        cardsContainer.style.userSelect = "auto";
+      });
+
+      cardsContainer.addEventListener("mousemove", (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - cardsContainer.offsetLeft;
+        const walk = (x - startX) * 2; // Faktor kecepatan scroll (2x)
+        cardsContainer.scrollLeft = scrollLeft - walk;
+      });
+
+      // Optional: Support untuk touch device
+      cardsContainer.addEventListener("touchstart", (e) => {
+        isDown = true;
+        startX = e.touches[0].pageX - cardsContainer.offsetLeft;
+        scrollLeft = cardsContainer.scrollLeft;
+      });
+
+      cardsContainer.addEventListener("touchend", () => {
+        isDown = false;
+      });
+
+      cardsContainer.addEventListener("touchmove", (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.touches[0].pageX - cardsContainer.offsetLeft;
+        const walk = (x - startX) * 2;
+        cardsContainer.scrollLeft = scrollLeft - walk;
+      });
+
+      // --------- Burger Menu -----------
+      const burger = document.querySelector(".burger");
+      const menu = document.querySelector(".menu");
+
+      burger.addEventListener("click", function () {
+        burger.classList.toggle("active");
+        menu.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
