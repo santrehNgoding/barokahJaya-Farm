@@ -1,4 +1,3 @@
-/*
 function loadComponent(id, file, callback) {
   fetch(file)
     .then(function (response) {
@@ -11,64 +10,15 @@ function loadComponent(id, file, callback) {
     });
 }
 
-// Navbar (pakai callback)
-loadComponent("navbar", "components/navbar.html", function () {
-  const nav = document.querySelector(".bottom-navigation");
-
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 50) {
-      nav.classList.add("scrolled");
-    } else {
-      nav.classList.remove("scrolled");
-    }
-  });
-});
-
-// lainnya biasa
-loadComponent("header", "components/header.html");
-loadComponent("footer", "components/footer.html");
-loadComponent("navbar", "components/navbar.html");
-
-setTimeout(function () {
-  const burger = document.getElementById("burger");
-  const menu = document.getElementById("menu");
-
-  burger.addEventListener("click", function () {
-    menu.classList.toggle("active");
-    burger.classList.toggle("active");
-  });
-
-  const links = menu.querySelectorAll("a");
-
-  links.forEach(function (link) {
-    link.addEventListener("click", function () {
-      menu.classList.remove("active");
-      burger.classList.remove("active");
-    });
-  });
-}, 500);
-
-*/
-
-function loadComponent(id, file, callback) {
-  fetch(file)
-    .then(function (response) {
-      return response.text();
-    })
-    .then(function (data) {
-      document.getElementById(id).innerHTML = data;
-
-      if (callback) callback(); // jalankan setelah load selesai
-    });
-}
-
-// ✅ Navbar (semua logic di sini)
+// ✅ Navbar (SEMUA logic di sini)
 loadComponent("navbar", "components/navbar.html", function () {
   const nav = document.querySelector(".bottom-navigation");
   const burger = document.querySelector(".burger");
   const menu = document.querySelector(".menu");
 
-  // scroll effect
+  // =========================
+  // SCROLL NAVBAR
+  // =========================
   window.addEventListener("scroll", function () {
     if (window.scrollY > 50) {
       nav.classList.add("scrolled");
@@ -77,13 +27,17 @@ loadComponent("navbar", "components/navbar.html", function () {
     }
   });
 
-  // burger click
+  // =========================
+  // BURGER MENU
+  // =========================
   burger.addEventListener("click", function () {
     burger.classList.toggle("active");
     menu.classList.toggle("active");
   });
 
-  // auto close saat klik menu
+  // =========================
+  // AUTO CLOSE MENU
+  // =========================
   const links = menu.querySelectorAll("a");
   links.forEach(function (link) {
     link.addEventListener("click", function () {
@@ -91,6 +45,25 @@ loadComponent("navbar", "components/navbar.html", function () {
       burger.classList.remove("active");
     });
   });
+
+  // =========================
+  // SOSMED TOGGLE (BARU 🔥)
+  // =========================
+  const sosmedToggle = document.getElementById("sosmedToggle");
+  const sosmedMenu = document.getElementById("sosmedMenu");
+
+  if (sosmedToggle && sosmedMenu) {
+    sosmedToggle.addEventListener("click", function () {
+      sosmedMenu.classList.toggle("active");
+    });
+
+    // optional: klik luar untuk menutup
+    document.addEventListener("click", function (e) {
+      if (!sosmedToggle.contains(e.target) && !sosmedMenu.contains(e.target)) {
+        sosmedMenu.classList.remove("active");
+      }
+    });
+  }
 });
 
 // lainnya
