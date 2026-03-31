@@ -727,6 +727,10 @@ footer h3 {
 /* ---------Media Query----------------- */
 
 @media (min-width: 360px) and (max-width: 420px) {
+  body {
+    padding-top: 50px;
+  }
+
   .navigation {
     background: rgba(255, 255, 255, 0.95);
   }
@@ -811,6 +815,7 @@ footer h3 {
   .menu a {
     padding: 10px 0;
     width: 100%;
+    font-size: 16px;
   }
 
   .menu.active {
@@ -964,11 +969,60 @@ footer h3 {
     padding-top: 15px;
   }
 
-  .menu a {
-    font-size: 16px;
+  /* ----- Tentang Main ---------- */
+
+  .tentang main {
+    flex-direction: column;
   }
 
-  body {
-    padding-top: 50px;
+  .left-main {
+    padding: 20px;
+    text-align: center;
+    min-height: 700px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .left-main h2 {
+    font-size: 32px;
+    padding: 0;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .left-main::before {
+    opacity: 0.4;
+  }
+
+  .right-main {
+    padding: 20px;
+  }
+
+  .right-main h2 {
+    font-size: 24px;
+  }
+
+  .right-main p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .right-main section {
+    margin-bottom: 30px;
+  }
+
+  .visiMisi ul,
+  .nilai ul {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .visiMisi h3 {
+    font-size: 18px;
+  }
+
+  .break {
+    display: none;
   }
 }
