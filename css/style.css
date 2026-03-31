@@ -16,7 +16,7 @@ body {
   padding-top: 150px;
 }
 
-/* ---------Navigation-------------- */
+/* ---------Top Navigation-------------- */
 
 .top-navigation {
   display: flex;
@@ -46,24 +46,24 @@ body {
   display: inline-block;
 }
 
+.sosmed-toggle {
+  display: none;
+}
+
 .sosmed {
-  position: absolute;
-  top: 120%;
-  left: 0;
-  transform: none;
-  padding: 10px;
-  border-radius: 10px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 10px;
 
-  opacity: 0;
-  pointer-events: none;
-  transition: 0.3s;
+  position: static; /* penting! */
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .sosmed a {
   padding-left: 10px;
+  color: var(--warna-netral);
+  font-size: 18px;
 }
 
 .sosmed.active {
@@ -71,14 +71,12 @@ body {
   pointer-events: auto;
 }
 
-.sosmed-toggle {
-  display: none;
-}
-
 .sosmed a:hover {
   color: var(--warna-kedua);
   transition: color 0.3s ease;
 }
+
+/* --------- Bottom Navigation--------- */
 
 .bottom-navigation {
   display: flex;
@@ -774,14 +772,25 @@ footer h3 {
   }
 
   /* ------ sosmed ---------- */
+
+  .sosmed-toggle {
+    display: flex;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
   .sosmed {
     position: absolute;
     top: 50px;
     right: 0;
+
     background: white;
     padding: 10px;
     border-radius: 10px;
-    display: flex;
+
     flex-direction: column;
     gap: 10px;
 
@@ -789,6 +798,8 @@ footer h3 {
     pointer-events: none;
     transform: translateY(-10px);
     transition: 0.3s;
+
+    z-index: 9999;
   }
 
   .sosmed a {
@@ -802,22 +813,9 @@ footer h3 {
     transform: translateY(0);
   }
 
-  .sosmed-toggle {
-    display: flex;
-    font-size: 20px;
-    color: white;
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-
-  .sosmed a {
-    padding-left: 0px;
-  }
-
   .home main {
-    margin-top: 30px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 40px;
   }
 
   .home main h2 {
