@@ -743,9 +743,17 @@ footer h3 {
     transform: rotate(-45deg) translate(5px, -5px);
   }
 
+  .sosmed a {
+    padding-left: 0px;
+  }
+
   .home main {
     margin-top: 30px;
     margin-bottom: 50px;
+  }
+
+  .home main h2 {
+    font-size: 25px;
   }
 
   /* ---------- Gallery--------- */
@@ -821,7 +829,7 @@ footer h3 {
   }
 
   .left-footer iframe {
-    height: 250px; /* biar tidak terlalu tinggi */
+    height: 250px;
   }
 
   .center-footer {
