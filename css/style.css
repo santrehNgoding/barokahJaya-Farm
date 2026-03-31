@@ -221,6 +221,8 @@ header video {
   grid-row: 3;
 }
 
+/* --------- Testimoni--------- */
+
 .cards {
   display: flex;
   gap: 30px;
@@ -331,6 +333,10 @@ blockquote::after {
   line-height: 1;
 }
 
+#testimoni {
+  scroll-margin-top: 150px;
+}
+
 /* ---------Footer-------------- */
 
 footer {
@@ -432,6 +438,7 @@ footer h3 {
 }
 
 /* ---------Tentang Main-------------- */
+
 .tentang main {
   display: flex;
   width: 100%;
@@ -686,12 +693,6 @@ footer h3 {
   transform: translateY(-5px);
 }
 
-/* -----------Testimoni-------- */
-
-#testimoni {
-  scroll-margin-top: 150px;
-}
-
 /* ---------Media Query----------------- */
 
 @media (max-width: 768px) {
@@ -740,5 +741,116 @@ footer h3 {
 
   .burger.active span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  .home main {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  /* ---------- Gallery--------- */
+
+  .gallery {
+    grid-template-columns: 1fr 1fr; /* 2 kolom */
+  }
+
+  .item {
+    grid-column: auto !important;
+    grid-row: auto !important;
+  }
+
+  .item img {
+    height: 150px;
+  }
+
+  .item:active img {
+    transform: scale(0.95);
+  }
+
+  /* ----------- Card Testimoni ----------*/
+
+  .cards {
+    gap: 15px;
+    padding: 50px 10px 30px 10px;
+    scroll-padding-left: 10px;
+  }
+
+  .card {
+    width: 280px;
+    min-width: 280px;
+    padding: 60px 15px 20px 15px;
+  }
+
+  .customer-info {
+    top: -30px;
+  }
+
+  .customer-info img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .name-customer {
+    padding: 6px 10px;
+  }
+
+  .name-customer .customer-name {
+    font-size: 14px;
+  }
+
+  .name-customer .customer-title {
+    font-size: 11px;
+  }
+
+  blockquote {
+    font-size: 14px;
+    padding: 20px 20px 15px 30px;
+  }
+
+  /* ------- Footer ---------- */
+  footer {
+    grid-template-columns: 1fr; /* jadi 1 kolom */
+    gap: 20px;
+    padding: 20px 15px;
+  }
+
+  .left-footer,
+  .center-footer,
+  .right-footer {
+    padding: 10px;
+  }
+
+  .left-footer iframe {
+    height: 250px; /* biar tidak terlalu tinggi */
+  }
+
+  .center-footer {
+    line-height: 25px;
+    font-size: 14px;
+  }
+
+  .right-footer nav {
+    align-items: flex-start;
+  }
+
+  .right-footer a {
+    font-size: 14px;
+  }
+
+  .order-button {
+    display: block;
+    text-align: center;
+    margin: 15px auto 0 auto;
+  }
+
+  .bottom-footer {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .center-footer,
+  .right-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 15px;
   }
 }
