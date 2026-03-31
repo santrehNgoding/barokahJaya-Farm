@@ -771,6 +771,10 @@ footer h3 {
     transform: rotate(-45deg) translate(5px, -5px);
   }
 
+  .top-navigation {
+    padding: 10px;
+  }
+
   /* ------ sosmed ---------- */
 
   .sosmed-toggle {
@@ -890,6 +894,7 @@ footer h3 {
   }
 
   /* ------- Footer ---------- */
+
   footer {
     grid-template-columns: 1fr; /* jadi 1 kolom */
     gap: 20px;
