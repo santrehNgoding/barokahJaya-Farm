@@ -747,6 +747,7 @@ footer h3 {
   position: sticky;
   top: 150px;
   align-self: start;
+  min-height: 500px;
 }
 
 .news-item {
@@ -774,7 +775,7 @@ footer h3 {
   font-size: 14px;
 }
 
-aside img {
+.article aside img {
   width: 150px;
   border-radius: 10px;
   border: 2px solid var(--warna-netral);
@@ -786,7 +787,7 @@ aside h3 {
   font-weight: 300;
 }
 
-aside h2 {
+.article aside h2 {
   padding-bottom: 20px;
 }
 
@@ -804,7 +805,7 @@ article h2 {
   margin-bottom: 10px;
 }
 
-main figure {
+.article main figure {
   padding-bottom: 15px;
 }
 
@@ -1258,5 +1259,104 @@ main figure {
   .alasan-card p {
     font-size: 14px;
     line-height: 1.5;
+  }
+
+  /*-------- Article -------------- */
+
+  .article main {
+    grid-template-columns: 1fr; /* jadi 1 kolom */
+    padding: 10px;
+  }
+
+  /* =========================
+     ARTICLE
+  ========================= */
+  article {
+    font-size: 16px;
+  }
+
+  article h1 {
+    font-size: 24px;
+  }
+
+  article h2 {
+    font-size: 20px;
+  }
+
+  article p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  /* =========================
+     GAMBAR
+  ========================= */
+  .article main figure img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* =========================
+     ASIDE (PINDAH KE BAWAH)
+  ========================= */
+  .article aside {
+    position: static; /* ❗ matikan sticky di mobile */
+    margin-top: 30px;
+  }
+
+  /* =========================
+     NEWS ITEM
+  ========================= */
+  .news-item {
+    gap: 10px;
+  }
+
+  .news-item img {
+    width: 80px;
+  }
+
+  .news-item h3 {
+    font-size: 13px;
+  }
+
+  /* =========================
+     BREADCRUMB
+  ========================= */
+  .breadcrumb {
+    margin: 100px 10px 10px 10px;
+    font-size: 12px;
+  }
+
+  /* =========================
+     RELATED ARTICLE
+  ========================= */
+  .related-container {
+    display: flex;
+    overflow-x: auto; /* bisa di scroll samping */
+    gap: 15px;
+  }
+
+  .related a {
+    min-width: 120px;
+  }
+
+  .related img {
+    height: 80px;
+  }
+
+  /* =========================
+     SHARE BUTTON
+  ========================= */
+  .share {
+    text-align: center;
+  }
+
+  .share a {
+    font-size: 22px;
+  }
+
+  .breadcrumb a,
+  .breadcrumb p {
+    font-size: 12px;
   }
 }
