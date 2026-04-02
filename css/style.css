@@ -732,6 +732,151 @@ footer h3 {
   transform: translateY(-5px);
 }
 
+/* --------- Article ------------ */
+
+.article main {
+  max-width: 1200px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: start;
+  gap: 30px;
+}
+
+.article aside {
+  position: sticky;
+  top: 150px;
+  align-self: start;
+}
+
+.news-item {
+  background: var(--warna-kedua);
+  margin-bottom: 15px;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.news-item:hover {
+  transform: scale(1.1);
+}
+
+.news-item img {
+  width: 100px;
+  border-radius: 8px;
+}
+
+.news-item h3 {
+  color: white;
+  font-size: 14px;
+}
+
+aside img {
+  width: 150px;
+  border-radius: 10px;
+  border: 2px solid var(--warna-netral);
+  margin-right: 10px;
+}
+
+aside h3 {
+  color: var(--warna-netral);
+  font-weight: 300;
+}
+
+aside h2 {
+  padding-bottom: 20px;
+}
+
+article {
+  line-height: 1.8;
+}
+
+article p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+article h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+main figure {
+  padding-bottom: 15px;
+}
+
+.article ul,
+.article ol {
+  padding-left: 15px;
+}
+
+.article h1,
+.article h2 {
+  margin-top: 0;
+}
+
+.article aside header {
+  margin-top: 20px;
+}
+
+.breadcrumb {
+  max-width: 1200px;
+  margin: 120px auto 10px auto;
+  font-size: 14px;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: var(--warna-kedua);
+}
+
+.breadcrumb span {
+  color: #666;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.related {
+  margin-top: 50px;
+}
+
+.related-container {
+  display: flex;
+  gap: 20px;
+}
+
+.related-container p {
+  line-height: 1.5;
+}
+
+.related a {
+  width: 150px;
+  text-decoration: none;
+  color: black;
+}
+
+.related img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.share {
+  margin-top: 30px;
+}
+
+.share a {
+  font-size: 20px;
+  margin-right: 10px;
+  color: var(--warna-utama);
+}
+
 /* ---------Media Query----------------- */
 
 @media (min-width: 360px) and (max-width: 420px) {

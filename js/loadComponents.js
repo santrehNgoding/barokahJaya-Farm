@@ -64,6 +64,48 @@ loadComponent("navbar", "components/navbar.html", function () {
         sosmedMenu.classList.remove("active");
       }
     });
+
+    // =========================
+    // SHARE BUTTON
+    // =========================
+    document.addEventListener("DOMContentLoaded", function () {
+      // cek apakah ada share section (biar aman di semua halaman)
+      const shareSection = document.querySelector(".share");
+      if (!shareSection) return;
+
+      // ambil URL halaman
+      const url = window.location.href;
+
+      // ambil judul artikel (h1)
+      const titleElement = document.querySelector("article h1");
+      if (!titleElement) return;
+
+      const text = titleElement.innerText;
+
+      // ambil tombol share
+      const wa = document.getElementById("shareWA");
+      const fb = document.getElementById("shareFB");
+      const tg = document.getElementById("shareTG");
+
+      // set link otomatis
+      if (wa) {
+        wa.href = "https://wa.me/?text=" + encodeURIComponent(text + " " + url);
+      }
+
+      if (fb) {
+        fb.href =
+          "https://www.facebook.com/sharer/sharer.php?u=" +
+          encodeURIComponent(url);
+      }
+
+      if (tg) {
+        tg.href =
+          "https://t.me/share/url?url=" +
+          encodeURIComponent(url) +
+          "&text=" +
+          encodeURIComponent(text);
+      }
+    });
   }
 });
 
