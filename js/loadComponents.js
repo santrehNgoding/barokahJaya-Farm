@@ -10,7 +10,7 @@ function loadComponent(id, file, callback) {
     });
 }
 
-// ✅ Navbar (SEMUA logic di sini)
+// ✅ Navbar (-----------SEMUA LOGIC DISINI--------------)
 loadComponent("navbar", "components/navbar.html", function () {
   const nav = document.querySelector(".bottom-navigation");
   const burger = document.querySelector(".burger");
@@ -64,30 +64,24 @@ loadComponent("navbar", "components/navbar.html", function () {
         sosmedMenu.classList.remove("active");
       }
     });
+  }
 
-    // =========================
-    // SHARE BUTTON
-    // =========================
-    document.addEventListener("DOMContentLoaded", function () {
-      // cek apakah ada share section (biar aman di semua halaman)
-      const shareSection = document.querySelector(".share");
-      if (!shareSection) return;
+  // =========================
+  // SHARE BUTTON
+  // =========================
+  const shareSection = document.querySelector(".share");
 
-      // ambil URL halaman
-      const url = window.location.href;
+  if (shareSection) {
+    const url = window.location.href;
 
-      // ambil judul artikel (h1)
-      const titleElement = document.querySelector("article h1");
-      if (!titleElement) return;
-
+    const titleElement = document.querySelector("article h1");
+    if (titleElement) {
       const text = titleElement.innerText;
 
-      // ambil tombol share
       const wa = document.getElementById("shareWA");
       const fb = document.getElementById("shareFB");
       const tg = document.getElementById("shareTG");
 
-      // set link otomatis
       if (wa) {
         wa.href = "https://wa.me/?text=" + encodeURIComponent(text + " " + url);
       }
@@ -105,6 +99,73 @@ loadComponent("navbar", "components/navbar.html", function () {
           "&text=" +
           encodeURIComponent(text);
       }
+    }
+  }
+
+  // =========================
+  // LOAD DATA JSON
+  // =========================
+  let articlesData = [];
+
+  fetch("data/articles.json")
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      articlesData = data;
+
+      // setelah data siap, baru aktifkan klik
+      initClick();
+    });
+
+  // =========================
+  // FUNCTION CLICK
+  // =========================
+  function initClick() {
+    const newsItems = document.querySelectorAll(".news-item");
+    const articleContent = document.getElementById("articleContent");
+
+    newsItems.forEach(function (item) {
+      item.addEventListener("click", function () {
+        const id = item.getAttribute("data-id");
+
+        // cari artikel dari JSON
+        const article = articlesData.find(function (a) {
+          return a.id == id;
+        });
+
+        if (!article) {
+          alert("Artikel tidak ditemukan!");
+          return;
+        }
+
+        // tampilkan ke kiri
+        articleContent.innerHTML = `
+        <header>
+          <h1>${article.title}</h1>
+        </header>
+
+        <figure>
+          <img src="${article.image}" alt="">
+        </figure>
+
+        <section>
+          ${article.content}
+        </section>
+      `;
+
+        // update breadcrumb
+        const breadcrumb = document.querySelector(".breadcrumb span");
+        if (breadcrumb) {
+          breadcrumb.innerText = article.title;
+        }
+
+        // scroll ke atas
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
     });
   }
 });

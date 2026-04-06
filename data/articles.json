@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Pakan Fermentasi Anti Gagal",
+    "image": "images/fermentasi.jpg",
+    "content": "<p>Ini adalah penjelasan tentang pakan fermentasi.</p><ul><li>Langkah 1</li><li>Langkah 2</li></ul>"
+  },
+  {
+    "id": 2,
+    "title": "Tips Memilih Domba Berkualitas",
+    "image": "images/image5.jpg",
+    "content": "<p>Cara memilih domba yang sehat:</p><ol><li>Mata cerah</li><li>Kaki kuat</li></ol>"
+  },
+  {
+    "id": 3,
+    "title": "Perawatan Domba Harian",
+    "image": "images/image2.jpg",
+    "content": "<p>Perawatan domba sangat penting untuk kesehatan.</p>"
+  },
+  {
+    "id": 4,
+    "title": "Pakan Berkualitas Tinggi",
+    "image": "images/image3.jpg",
+    "content": "<p>Pakan menentukan pertumbuhan domba.</p>"
+  },
+  {
+    "id": 5,
+    "title": "Kandang Ideal untuk Domba",
+    "image": "images/image4.jpg",
+    "content": "<p>Kandang harus bersih dan memiliki ventilasi baik.</p>"
+  }
+]
