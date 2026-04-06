@@ -1292,25 +1292,22 @@ article h2 {
     line-height: 1.6;
   }
 
-  /* =========================
-     GAMBAR
-  ========================= */
   .article main figure img {
     width: 100%;
     height: auto;
   }
 
-  /* =========================
-     ASIDE (PINDAH KE BAWAH)
-  ========================= */
   .article aside {
     position: static;
     margin-top: 30px;
   }
 
-  /* =========================
-     NEWS ITEM
-  ========================= */
+  .news-item:hover {
+    transform: none;
+  }
+
+  /* ------------- News Item -------------- */
+
   .news-item {
     gap: 10px;
   }
@@ -1323,17 +1320,15 @@ article h2 {
     font-size: 13px;
   }
 
-  /* =========================
-     BREADCRUMB
-  ========================= */
+  /* ----------- Breadcrumb ------------ */
+
   .breadcrumb {
     margin: 100px 10px 10px 10px;
     font-size: 12px;
   }
 
-  /* =========================
-     RELATED ARTICLE
-  ========================= */
+  /* ----------- Related Article ---------- */
+
   .related-container {
     display: flex;
     overflow-x: auto;
@@ -1348,9 +1343,8 @@ article h2 {
     height: 80px;
   }
 
-  /* =========================
-     SHARE BUTTON
-  ========================= */
+  /* ---------- Share Button--------- */
+
   .share {
     text-align: center;
   }
