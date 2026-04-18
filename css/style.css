@@ -804,6 +804,7 @@ footer h3 {
   margin-right: 10px;
 }
 
+<<<<<<< HEAD
 /* area isi artikel */
 #articleContent {
   font-size: 17px;
@@ -866,10 +867,13 @@ footer h3 {
 }
 
 /* gambar artikel */
+=======
+>>>>>>> f2e0fdad0e737b8fcfdc704fb271cc2053e92bc3
 #articleContent img {
   width: 100%;
   max-height: 400px;
   object-fit: cover;
+<<<<<<< HEAD
   border-radius: 12px;
 }
 
@@ -886,6 +890,9 @@ footer h3 {
   color: #666;
   margin: 20px 0;
   font-style: italic;
+=======
+  border-radius: 10px;
+>>>>>>> f2e0fdad0e737b8fcfdc704fb271cc2053e92bc3
 }
 
 aside h3 {
@@ -1388,6 +1395,7 @@ article h2 {
     padding: 10px;
   }
 
+<<<<<<< HEAD
   #articleContent {
     font-size: 15px;
     line-height: 1.8;
@@ -1413,6 +1421,28 @@ article h2 {
   #articleContent ul,
   #articleContent ol {
     margin-left: 20px;
+=======
+  article {
+    font-size: 16px;
+  }
+
+  article h1 {
+    font-size: 24px;
+  }
+
+  article h2 {
+    font-size: 20px;
+  }
+
+  article p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .article main figure img {
+    width: 100%;
+    height: auto;
+>>>>>>> f2e0fdad0e737b8fcfdc704fb271cc2053e92bc3
   }
 
   .article aside {

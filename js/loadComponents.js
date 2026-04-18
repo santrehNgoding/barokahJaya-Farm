@@ -154,8 +154,11 @@ loadComponent("navbar", "components/navbar.html", function () {
         </section>
       `;
 
+<<<<<<< HEAD
       
 
+=======
+>>>>>>> f2e0fdad0e737b8fcfdc704fb271cc2053e92bc3
         // update breadcrumb
         const breadcrumb = document.querySelector(".breadcrumb span");
         if (breadcrumb) {

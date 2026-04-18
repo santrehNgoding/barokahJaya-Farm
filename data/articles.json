@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+<<<<<<< HEAD
     "title": "Cara Membuat Pakan Fermentasi Domba Anti Gagal (Lengkap untuk Pemula)",
     "author": "Admin",
     "date": "18 April 2026",
@@ -14,29 +15,52 @@
     "date": "18 April 2026",
     "image": "images/image5.jpg",
     "content": "<p>Memilih domba yang berkualitas adalah langkah penting, baik untuk kebutuhan konsumsi, qurban, aqiqah, maupun untuk diternakkan kembali. Kesalahan dalam memilih domba bisa berdampak pada kerugian, baik dari segi kesehatan hewan maupun nilai ekonomisnya. Oleh karena itu, penting bagi Anda untuk mengetahui ciri-ciri domba yang sehat dan layak dipilih.</p><ol><li><strong>Perhatikan Kondisi Fisik Domba</strong><p>Domba yang sehat memiliki ciri fisik yang jelas dan mudah dikenali, seperti:</p><ul><li>Tubuh terlihat tegap dan tidak lemas</li><li>Mata cerah dan bersih, tidak sayu</li><li>Hidung tidak mengeluarkan lendir berlebihan</li><li>Bulu tampak bersih dan tidak kusam</li></ul><p>Kondisi fisik ini menjadi indikator awal kesehatan domba.</p></li><li><strong>Pilih Domba yang Aktif dan Lincah</strong><p>Domba yang baik biasanya memiliki gerakan yang aktif dan responsif. Hindari memilih domba yang:</p><ul><li>Terlihat diam terus-menerus</li><li>Tidak nafsu makan</li><li>Terpisah dari kelompoknya</li></ul><p>Perilaku ini bisa menjadi tanda bahwa domba sedang sakit atau stres.</p></li><li><strong>Periksa Bagian Mulut dan Gigi</strong><p>Pemeriksaan gigi penting untuk mengetahui usia domba. Domba dengan usia ideal biasanya memiliki susunan gigi yang:</p><ul><li>Rapi dan tidak rusak</li><li>Tidak terlalu aus</li></ul><p>Domba yang terlalu tua umumnya memiliki gigi yang sudah aus, sehingga kurang baik untuk dipilih terutama untuk keperluan qurban.</p></li><li><strong>Pastikan Domba Tidak Cacat</strong><p>Perhatikan apakah ada cacat fisik pada domba, seperti:</p><ul><li>Kaki pincang</li><li>Telinga rusak</li><li>Mata buta</li></ul><p>Untuk keperluan qurban, domba harus dalam kondisi sempurna tanpa cacat.</p></li><li><strong>Perhatikan Nafsu Makan</strong><p>Domba yang sehat biasanya memiliki nafsu makan yang baik. Anda bisa melihat apakah domba tersebut:</p><ul><li>Mau makan saat diberi pakan</li><li>Tidak terlihat lesu saat makan</li></ul><p>Nafsu makan yang baik menandakan kondisi kesehatan yang optimal.</p></li><li><strong>Pilih dari Peternak Terpercaya</strong><p>Membeli domba dari peternak atau penjual terpercaya sangat penting untuk menghindari penipuan. Peternak yang profesional biasanya:</p><ul><li>Menjaga kesehatan ternaknya</li><li>Memberikan informasi yang jujur</li><li>Menyediakan domba dengan kualitas terbaik</li></ul></li><li><strong>Sesuaikan dengan Kebutuhan</strong><p>Terakhir, pastikan Anda memilih domba sesuai kebutuhan:</p><ul><li>Untuk qurban, pilih yang memenuhi syarat umur dan tidak cacat</li><li>Untuk aqiqah, pilih yang sehat dan cukup umur</li><li>Untuk ternak, pilih bibit unggul dengan potensi berkembang baik</li></ul></li></ol><h2>Penutup</h2><p>Memilih domba yang tepat membutuhkan ketelitian dan pengetahuan dasar tentang kondisi hewan. Dengan memperhatikan kondisi fisik, perilaku, serta membeli dari sumber terpercaya, Anda dapat menghindari kesalahan dalam memilih domba.</p><p>Dengan begitu, Anda tidak hanya mendapatkan domba yang sehat, tetapi juga memastikan nilai ibadah dan investasi Anda menjadi lebih optimal.</p>"
+=======
+    "title": "Pakan Fermentasi Anti Gagal",
+    "image": "images/fermentasi.jpg",
+    "content": "<p>Ini adalah penjelasan tentang pakan fermentasi.</p><ul><li>Langkah 1</li><li>Langkah 2</li></ul>"
+  },
+  {
+    "id": 2,
+    "title": "Tips Memilih Domba Berkualitas",
+    "image": "images/image5.jpg",
+    "content": "<p>Cara memilih domba yang sehat:</p><ol><li>Mata cerah</li><li>Kaki kuat</li></ol>"
+>>>>>>> f2e0fdad0e737b8fcfdc704fb271cc2053e92bc3
   },
   {
     "id": 3,
     "title": "Perawatan Domba Harian",
+<<<<<<< HEAD
     "author": "Admin",
     "date": "18 April 2026",
+=======
+>>>>>>> f2e0fdad0e737b8fcfdc704fb271cc2053e92bc3
     "image": "images/image2.jpg",
     "content": "<p>Perawatan domba sangat penting untuk kesehatan.</p>"
   },
   {
     "id": 4,
+<<<<<<< HEAD
     "title": "Pakan Ramban Berkualitas Tinggi",
     "author": "Admin",
     "date": "18 April 2026",
     "image": "images/telopapua.jpg",
+=======
+    "title": "Pakan Berkualitas Tinggi",
+    "image": "images/image3.jpg",
+>>>>>>> f2e0fdad0e737b8fcfdc704fb271cc2053e92bc3
     "content": "<p>Pakan menentukan pertumbuhan domba.</p>"
   },
   {
     "id": 5,
     "title": "Kandang Ideal untuk Domba",
+<<<<<<< HEAD
     "author": "Admin",
     "date": "18 April 2026",
     "image": "images/kandang.jpg",
+=======
+    "image": "images/image4.jpg",
+>>>>>>> f2e0fdad0e737b8fcfdc704fb271cc2053e92bc3
     "content": "<p>Kandang harus bersih dan memiliki ventilasi baik.</p>"
   }
 ]
